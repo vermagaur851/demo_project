@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <Router>
+    <Router className="scroll-smooth">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
