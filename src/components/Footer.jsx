@@ -10,10 +10,10 @@ function Footer() {
           <div>TERMS & CONDITIONS</div>
           <div>ABOUT</div>
         </div>
-        <div className="flex  flex-col gap-2 items-center w-1/3">
+        <div className="flex flex-col gap-2 items-center w-1/3">
           <Link
             to="/"
-            className="text-2xl flex items-center font-serif bg-white px-2 font-bold -mt-4 text-gray-600"
+            className="text-2xl flex rounded-xl items-center font-serif bg-white px-2 font-bold -mt-4 text-gray-600"
           >
             <svg viewBox="0 0 24 24" fill="black" height="1em" width="1em">
               <path d="M17.5 5.1C18.5 6.4 19 7.6 19 9c0 1.7-.7 3.3-2.4 5.1-1.9 2-3.6 4.2-3.6 6.4 0 .4.1.8.2 1.3 0 .1 0 .2-.1.3-.1.1-.2 0-.2-.1-1-1.3-1.5-2.5-1.5-3.9 0-1.7.7-3.3 2.4-5.1 1.9-2 3.6-4.2 3.6-6.4 0-.4-.1-.8-.2-1.3 0-.1 0-.2.1-.3.1 0 .1 0 .2.1m-7.8-3c.7.9 1 1.9 1 2.8 0 1.3-.6 2.5-1.8 3.8-1.4 1.5-2.7 3.2-2.7 4.8 0 .3.1.7.2.9 0 .1 0 .1-.1.2s-.2 0-.2 0c-.8-1-1.1-2-1.1-2.9 0-1.3.6-2.5 1.8-3.8 1.4-1.5 2.7-3.2 2.7-4.8 0-.3-.1-.7-.2-.9V2c.2 0 .3 0 .4.1m.4 7.8c1.9-2 3.6-4.2 3.6-6.4 0-.4-.1-.8-.2-1.3 0-.1 0-.2.1-.3.1-.1.2 0 .2.1 1 1.3 1.5 2.5 1.5 3.9 0 1.7-.7 3.3-2.4 5.1-1.9 2-3.6 4.2-3.6 6.4 0 .4.1.8.2 1.3 0 .1 0 .2-.1.3-.1.1-.2 0-.2-.1-1-1.3-1.5-2.5-1.5-3.9 0-1.7.7-3.3 2.4-5.1z" />
@@ -75,7 +75,7 @@ function Footer() {
           <div>CONTACT</div>
         </div>
       </div>
-      <div className="flex justify-center items-center pb-2 bg-black text-white">
+      <div className="flex justify-center items-center p-2 bg-black text-white">
         c 2024 | PerfumeStore
       </div>
     </>

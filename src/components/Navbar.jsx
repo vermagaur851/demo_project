@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(1);
   return (
-    <nav className="p-4 shadow-md border-b-4 border-gray-600 ">
+    <nav className="p-4 shadow-md border-b-4 border-gray-700 ">
       <div className="flex justify-between items-center gap-6 px-4">
         <div className="cursor-pointer transition duration-200">
           {open ? (
