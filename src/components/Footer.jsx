@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <div className="flex flex-grow justify-between pb-4 px-8 text-white bg-black">
-        <div className="border-t-2 font-mono flex gap-2 flex-col justify-center items-center border-black w-1/3">
+        <div className="border-t-2 mt-16 font-mono flex gap-2 flex-col justify-center items-center border-black w-1/3">
           <div className="">PRIVACY POLICY</div>
           <div>TERMS & CONDITIONS</div>
           <div>ABOUT</div>
@@ -21,7 +21,7 @@ function Footer() {
             PerfumeStore
           </Link>
           <div className="w-full px-2 gap-2 flex flex-col">
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center py-4 gap-6">
               <Link to={"#"}>
                 <svg
                   fill="none"
@@ -69,13 +69,13 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t-2 font-mono flex gap-2 flex-col justify-center items-center border-black w-1/3">
+        <div className="border-t-2 mt-16 font-mono flex gap-2 flex-col justify-center items-center border-black w-1/3">
           <div>SHIPPING INFO</div>
           <div>RETURNS / EXCHANGE</div>
           <div>CONTACT</div>
         </div>
       </div>
-      <div className="flex justify-center items-center p-2 bg-black text-white">
+      <div className="flex justify-center items-center pb-2 bg-black text-white">
         c 2024 | PerfumeStore
       </div>
     </>

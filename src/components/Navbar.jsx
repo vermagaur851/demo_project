@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(1);
   return (
-    <nav className="p-4 shadow-md border-b-4 border-gray-700 ">
+    <nav className="p-4 shadow-md border-b-4 border-gray-800 ">
       <div className="flex justify-between items-center gap-6 px-4">
-        <div className="cursor-pointer transition duration-200">
+        <div className="md:hidden cursor-pointer transition duration-200">
           {open ? (
             <div
               className="transition ease-out duration-300 hover:ease-in"
@@ -44,9 +44,34 @@ const Navbar = () => {
             </div>
           )}
         </div>
+        <div className="hidden px-2 md:flex text-black gap-4 font-medium transition-all">
+          <Link
+            to="/"
+            className={"border-b-2 border-transparent hover:border-black transition-all duration-300"}
+          >
+            Home
+          </Link>
+          <Link
+            to="/collections"
+            className={"border-b-2 border-transparent hover:border-black transition-all duration-300"}
+          >
+            Collections
+          </Link>
+          <Link
+            to="/offers"
+            className={"border-b-2 border-transparent hover:border-black transition-all duration-300"}
+            >
+            Offers
+          </Link>
+          <Link
+            to="/contact"
+            className={"border-b-2 border-transparent hover:border-black transition-all duration-300"}>
+            Contact Us
+          </Link>
+        </div>
         <Link
           to="/"
-          className="text-2xl flex items-center font-serif font-bold text-gray-600"
+          className="text-2xl border-black md:absolute md:ml-[42%] flex items-center font-serif font-bold text-gray-600"
         >
           <svg viewBox="0 0 24 24" fill="black" height="1em" width="1em">
             <path d="M17.5 5.1C18.5 6.4 19 7.6 19 9c0 1.7-.7 3.3-2.4 5.1-1.9 2-3.6 4.2-3.6 6.4 0 .4.1.8.2 1.3 0 .1 0 .2-.1.3-.1.1-.2 0-.2-.1-1-1.3-1.5-2.5-1.5-3.9 0-1.7.7-3.3 2.4-5.1 1.9-2 3.6-4.2 3.6-6.4 0-.4-.1-.8-.2-1.3 0-.1 0-.2.1-.3.1 0 .1 0 .2.1m-7.8-3c.7.9 1 1.9 1 2.8 0 1.3-.6 2.5-1.8 3.8-1.4 1.5-2.7 3.2-2.7 4.8 0 .3.1.7.2.9 0 .1 0 .1-.1.2s-.2 0-.2 0c-.8-1-1.1-2-1.1-2.9 0-1.3.6-2.5 1.8-3.8 1.4-1.5 2.7-3.2 2.7-4.8 0-.3-.1-.7-.2-.9V2c.2 0 .3 0 .4.1m.4 7.8c1.9-2 3.6-4.2 3.6-6.4 0-.4-.1-.8-.2-1.3 0-.1 0-.2.1-.3.1-.1.2 0 .2.1 1 1.3 1.5 2.5 1.5 3.9 0 1.7-.7 3.3-2.4 5.1-1.9 2-3.6 4.2-3.6 6.4 0 .4.1.8.2 1.3 0 .1 0 .2-.1.3-.1.1-.2 0-.2-.1-1-1.3-1.5-2.5-1.5-3.9 0-1.7.7-3.3 2.4-5.1z" />
@@ -75,7 +100,7 @@ const Navbar = () => {
       </div>
       <div
         className={`${
-          open ? " w-0 z-0 " : " w-80 "
+          open ? " w-0 z-0 opacity-0" : " w-80 opacity-100 "
         } absolute -ml-5 bg-white text-xl font-bold font-serif flex flex-col h-3/5 z-10 gap-5 text-center text-black ease-in-out items-center justify-center transition-all duration-500`}
       >
         <Link
